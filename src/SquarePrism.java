@@ -2,6 +2,10 @@ public class SquarePrism extends Square implements  Figure{
 
     private int height;
 
+    public int getHeight() {
+        return height;
+    }
+
     public SquarePrism(int side, int height) {
         super(side);
         this.height = height;

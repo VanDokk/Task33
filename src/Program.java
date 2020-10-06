@@ -29,8 +29,13 @@ public class Program {
             }
         }
 
-        System.out.println("maxSquare:\n" + Squares.get(flagSquare).toString());
-        System.out.println();
-        System.out.println("maxDiagonal:\n " + Prisms.get(flagDiagonal).toString());
+        String Square = "|" + Squares.get(flagSquare).getSide();
+        String Prism = "|" + Prisms.get(flagDiagonal).getSide() + "|" + Prisms.get(flagDiagonal).getHeight();
+
+        SLfile.saveFile(Square, Prism);
+
+        String fileName = "1601984869911";
+
+        System.out.println("MaxSquare: \n" + SLfile.loadFile(fileName).get(0).toString() + "\n\nMaxPrism: \n" + SLfile.loadFile(fileName).get(1).toString());
     }
 }
