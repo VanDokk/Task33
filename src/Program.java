@@ -34,7 +34,7 @@ public class Program {
 
         SLfile.saveFile(Square, Prism);
 
-        String fileName = "1601984869911";
+        String fileName = "1603102310590";
 
         System.out.println("MaxSquare: \n" + SLfile.loadFile(fileName).get(0).toString() + "\n\nMaxPrism: \n" + SLfile.loadFile(fileName).get(1).toString());
     }
